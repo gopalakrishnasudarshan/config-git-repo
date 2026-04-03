@@ -1,1 +1,28 @@
+```yaml
+spring:
+  application:
+    name: customerprofile-api
+
+logging:
+  level:
+    com:
+      customerprofile: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %msg%n"
+  file:
+    name: logs/customerprofile.log
+    path: ./logs
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+server:
+  port: 9091
+```
 
