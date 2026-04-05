@@ -2,4 +2,7 @@ spring:
   mongodb:
     uri: mongodb://localhost:27017
     database: ZellleTransactionOrder
+    
+customerprofile:
+  url: http://localhost:9092/api/v1/customers
 
